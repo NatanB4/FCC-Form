@@ -1,0 +1,74 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <header>
+            <h1 id="title">Magic Animals</h1>
+            <p id="description">Choose your magic pet and we will ship it in 24 hours<br><b>(We do not accept returns)
+                </b></p>
+        </header>
+    <div class="container">
+        <form id="survey-form">
+            <div id="magic_form">
+                <label id="name-label" for="name">Name</label><br>
+                <input id="name" type="text" name="name" class="controll" placeholder="Name your new pet" required>
+            </div>
+
+            <div id="magic_form">
+                <label id="email-label" for="email">Email</label><br>
+                <input id="email" type="email" name="email" class="controll" placeholder="Your email for delivery"
+                    required>
+            </div>
+
+            <div id="magic_form">
+                <label id="number-label" for="age">Age</label><br>
+                <input id="number" type="number" name="age" min="18" max="100" class="controll"
+                    placeholder="Your age (minimum 18)   ">
+            </div>
+            <div id="magic_form">
+                <p>your pet's race</p>
+                <select id="dropdown" name="role" class="controll" required>
+                    <option value="Oni">Oni</option>
+                    <option value="Gnome">Gnome</option>
+                    <option value="Faerie">Faerie</option>
+                    <option value="Gorgon">Gorgon</option>
+                    <option value="Phoenix">Phoenix</option>
+                </select>
+            </div>
+
+            <div id="magic_form">
+                <p>Would you recommend our mystic services?</p>
+                <label>
+                    <input id="service" name="recommend" value="Surely" type="radio" checked>
+                    Surely</label>
+                <label><br>
+                    <input id="services" name="recommend" value="Sure" type="radio">
+                    Sure!</label>
+            </div>
+            <div id="magic_form">
+                <p>Your pet's personality                </p>
+                <label><input name="personality" value="Advocate" type="checkbox">Advocate</label>
+                <label><input name="personality" value="Mediator" type="checkbox">Mediator</label>
+                <label><input name="personality" value="Protagonist" type="checkbox">Protagonist</label>
+                <label><input name="personality" value="Campaigner " type="checkbox">Campaigner</label>
+                </div>
+                <div id="magic_form">
+                    <p>
+                        If you have any suggestions on what services we can add, leave them here.
+                        </p>
+                        <textarea id="suggestions" name="comment" placeholder="Enter your suggestions here...">
+                        </textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" id="submit">End service                            </button>
+                        </div>
+            </form>
+
+</body>
+
+</html>
